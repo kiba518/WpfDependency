@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfDependency.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDependency"
+        mc:Ignorable="d" Background="Gainsboro"
+       
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <local:DependecyUserControl Height="30" HeaderTitle="我是Header"  DockPanel.Dock="Top"></local:DependecyUserControl>
+        <DockPanel>
+            <StackPanel>
+                <local:KButton  Height="50" Width="50" Stretch="None" ForeImage="/Image/关闭.png" BackImage="/Image/关闭退出.png" Background="Gray" MouseOverBackColor="Brown"/>
+                <local:KButton  Height="50" Width="50" Margin="0,10,0,0" Stretch="None" ForeImage="/Image/关闭.png" Background="Gray" MouseOverBackColor="Brown"/>
+                <local:KButton  Height="100" Width="100" Margin="0,10,0,0" Content="篮子" Stretch="Fill"  ForeImage="/Image/篮子.png" Background="Gray" MouseOverBackColor="Brown"/>
+            </StackPanel> 
+        </DockPanel>
+    </DockPanel>
+</Window>
